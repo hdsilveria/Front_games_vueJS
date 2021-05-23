@@ -1,28 +1,54 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+
+<ul id="menu" class="navbar justify-content-center fixed-top">
+  <div class="nav-item">
+    <a class="btn btn-outline-light" @click="mostraCad()"> Comentar </a>
+  </div>
+</ul>
+    <cadastrar v-show="mostraCadastrar"/>
+    <listar v-show="mostraListar"/>
+  
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import listar from './components/listar'
+import cadastrar from './components/cadastrar'
+
+
 
 export default {
-  name: 'App',
+  data(){
+    return { mostraListar: true, mostraCadastrar: false }
+  },
+ 
   components: {
-    HelloWorld
-  }
+    listar,
+    cadastrar
+  },
+
+methods:{
+
+  mostraCad: function(){
+  this.mostraCadastrar = !this.mostraCadastrar;
+  this.mostraListar = !this.mostraListar;
+  },
+}
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+#menu {
+  background-color: rgb(75, 75, 75);
+  color: white;
+  padding: 1%;
 }
+
+body {
+   background: rgb(0, 0, 0);
+}
+
 </style>
