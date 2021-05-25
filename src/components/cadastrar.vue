@@ -7,7 +7,7 @@
 
 <div class="form-group col-md-5"><br>
     <label class="form-label"><b>Seu nome e Sobrenome: </b></label>
-    <input type="text" v-model="Novocomentario.nome" class="form-control" minlength="15" maxlength="40" autocomplete="off" required>
+    <input type="text" v-model="Novocomentario.nome" class="form-control" minlength="15" maxlength="28" autocomplete="off" required>
 </div><br>
 
 <div class="row g-9">
@@ -87,7 +87,7 @@ export default {
 
       salvar(){       
         games.cadastrar(this.Novocomentario).then(response =>{
-        alert('Comentario realizado com sucesso! ' + response.data),
+        alert('Comentario realizado com sucesso! '),
         console.log(response),
         location.href = "/"
         })
@@ -103,9 +103,9 @@ export default {
 
 #cadastrar{
     
-    margin-top: 30px;
-    padding: 70px;
-    background: rgb(0, 0, 0);
+    margin-top: 100px;
+    padding: 2%;
+    background: rgb(75, 75, 75);
     color: white;
 }
 

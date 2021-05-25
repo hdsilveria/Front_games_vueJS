@@ -1,11 +1,12 @@
 <template>
   <div>
 
-<ul id="menu" class="navbar justify-content-center fixed-top">
-  <div class="nav-item">
+<ul id="menu" class="nav justify-content-center fixed-top">
+  <li class="nav-item">
     <a class="btn btn-outline-light" @click="mostraCad()"> Comentar </a>
-  </div>
+  </li>
 </ul>
+
     <cadastrar v-show="mostraCadastrar"/>
     <listar v-show="mostraListar"/>
   

@@ -19,7 +19,7 @@
 
 <p><i>- npm run serve -- --port "PORTA DESEJADA"</i></p>
 
-<p>- Ao iniciar no navegador com as URL Local: http://localhost:8080/ ou Network: http://192.168.1.6:8080/, será carregado o app no Modelo single page app, onde é possivel vizualizar os comentarios, inserir um novo e deletar; Para inserir um novo comentario, deve ir na opção "comentar":</p>
+<p>- Ao iniciar no navegador com as URL Local: http://localhost:8080/ ou Network: http://192.168.1.6:8080/, será carregado o app no Modelo single page app, onde é possivel vizualizar os comentarios, inserir um novo e deletar; Para inserir um novo comentario, deve ir na opção "comentar", no menu superior:</p>
 
 <img src="./git_img/vue_coment_games_all.png">
 
@@ -30,6 +30,10 @@
 <p>- Para deletar um comentario, é necessario clicar no icone "Deletar", onde deve ser confirmado o delete por meio de um alerta: </p>
 
 <img src="./git_img/vue_coment_games_delet.png">
+
+<br>
+
+<img src="./git_img/vue_coment_games_delet_confirm.png">
 
 
 <i> Projeto para demonstar um projeto SPA em constante mudança, avançando para melhoria e implementações de novas funcionalidas;</i>
